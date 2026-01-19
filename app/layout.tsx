@@ -2,6 +2,7 @@ import { DM_Sans, Inter } from 'next/font/google';
 import { siteConfig } from '@/data/config/site.settings';
 import { ThemeProviders } from './theme-providers';
 import { Metadata } from 'next';
+import { Analytics } from '@vercel/analytics/react';
 
 import { colors } from '@/data/config/colors.js';
 
@@ -141,6 +142,7 @@ export default function RootLayout({
             <Footer />
           </div>
         </ThemeProviders>
+        <Analytics />
       </body>
     </html>
   );
