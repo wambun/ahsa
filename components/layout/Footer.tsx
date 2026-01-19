@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 import { siteData, footerLinks } from '@/data/site-data';
 
@@ -10,12 +11,17 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Company Info */}
           <div className="lg:col-span-1">
-            <div className="flex items-center gap-2 mb-6">
-              <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center">
-                <span className="text-primary-500 font-bold text-lg">A</span>
+            <Link href="/" className="inline-block mb-6">
+              <div className="bg-white rounded-xl p-3">
+                <Image
+                  src="/static/images/logo.png"
+                  alt="AHAS - American Hispanic Associated Services"
+                  width={150}
+                  height={54}
+                  className="h-11 w-auto"
+                />
               </div>
-              <span className="font-display font-bold text-xl">AHAS</span>
-            </div>
+            </Link>
             <p className="text-white/80 mb-6 leading-relaxed">
               Family-owned business providing honest and affordable services to Northern California.
             </p>
