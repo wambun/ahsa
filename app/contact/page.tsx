@@ -262,14 +262,14 @@ export default function ContactPage() {
               {/* Map */}
               <div className="bg-white rounded-2xl overflow-hidden shadow-sm h-[300px]">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3088.5!2d-120.0!3d38.95!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzjCsDU3JzAwLjAiTiAxMjDCsDAwJzAwLjAiVw!5e0!3m2!1sen!2sus!4v1600000000000!5m2!1sen!2sus"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3088.8!2d-119.9847!3d38.9399!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809978a1b91f1151%3A0x1c2c8d8f8f8f8f8f!2s3053%20Harrison%20Ave%2C%20South%20Lake%20Tahoe%2C%20CA%2096150!5e0!3m2!1sen!2sus!4v1705600000000!5m2!1sen!2sus"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="AHAS Office Location"
+                  title="AHAS Office Location - 3053 Harrison Blvd, Suite 202, South Lake Tahoe, CA"
                 />
               </div>
 
