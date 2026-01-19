@@ -1,10 +1,14 @@
-export default function Home() {
+import { Hero, ServicesGrid, StatsSection, WhyChooseUs, ValueProps, ContactCTA } from '@/components/sections';
+
+export default function HomePage() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-24">
-      <h1 className="text-4xl font-bold">Welcome</h1>
-      <p className="mt-4 text-muted-foreground">
-        Start building your application.
-      </p>
-    </main>
+    <div className="w-full">
+      <Hero />
+      <ServicesGrid />
+      <WhyChooseUs />
+      <ValueProps />
+      <StatsSection />
+      <ContactCTA />
+    </div>
   );
 }

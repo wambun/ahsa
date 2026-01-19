@@ -1,4 +1,4 @@
-import { Nunito_Sans } from 'next/font/google';
+import { DM_Sans, Inter } from 'next/font/google';
 import { siteConfig } from '@/data/config/site.settings';
 import { ThemeProviders } from './theme-providers';
 import { Metadata } from 'next';
@@ -6,16 +6,18 @@ import { Metadata } from 'next';
 import { colors } from '@/data/config/colors.js';
 
 import '@/css/globals.css';
-import { SearchProvider } from '@/components/shared/SearchProvider';
-import { AnalyticsWrapper } from '@/components/shared/Analytics';
 
-const displayFont = Nunito_Sans({
+import { Header } from '@/components/layout/Header';
+import { Footer } from '@/components/layout/Footer';
+
+const displayFont = DM_Sans({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-space-display',
+  weight: ['400', '500', '600', '700'],
 });
 
-const baseFont = Nunito_Sans({
+const baseFont = Inter({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-space-default',
@@ -129,16 +131,14 @@ export default function RootLayout({
         <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       </head>
 
-      <body className="flex flex-col bg-white text-black antialiased dark:bg-gray-950 dark:text-white min-h-screen">
+      <body className="flex flex-col bg-white text-black antialiased min-h-screen">
         <ThemeProviders>
-          <AnalyticsWrapper />
-
-          <div className="w-full flex flex-col justify-between items-center font-sans">
-            <SearchProvider>
-              <main className="w-full flex flex-col items-center mb-auto">
-                {children}
-              </main>
-            </SearchProvider>
+          <div className="w-full flex flex-col justify-between items-center font-sans min-h-screen">
+            <Header />
+            <main className="w-full flex flex-col items-center mb-auto">
+              {children}
+            </main>
+            <Footer />
           </div>
         </ThemeProviders>
       </body>

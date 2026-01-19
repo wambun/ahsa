@@ -1,18 +1,18 @@
-/* Configure colors at https://shipixen.com/color-theme-explorer-shadcn */
+/* AHAS Brand Colors - Navy Blue + Orange */
 const colors = {
   primary: {
-    lighter: '#fde047',
-    light: '#facc15',
-    main: '#eab308',
-    dark: '#ca8a04',
-    darker: '#a16207',
+    lighter: '#3b5998',
+    light: '#2d4a7c',
+    main: '#1e3a5f',
+    dark: '#152c4a',
+    darker: '#0d1f35',
   },
   secondary: {
-    lighter: '#6ee7b7',
-    light: '#34d399',
-    main: '#10b981',
-    dark: '#059669',
-    darker: '#047857',
+    lighter: '#ffb366',
+    light: '#ff9933',
+    main: '#f97316',
+    dark: '#ea580c',
+    darker: '#c2410c',
   },
 };
 
