@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Phone } from 'lucide-react';
@@ -32,18 +33,15 @@ export function Header() {
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
-            <div className="w-12 h-12 bg-primary-500 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">A</span>
-            </div>
-            <div className="hidden sm:block">
-              <span className="font-display font-bold text-xl text-primary-500">
-                AHAS
-              </span>
-              <span className="hidden lg:block text-xs text-gray-500">
-                American Hispanic Associated Services
-              </span>
-            </div>
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/static/images/logo.png"
+              alt="AHAS - American Hispanic Associated Services"
+              width={180}
+              height={65}
+              className="h-12 sm:h-14 w-auto"
+              priority
+            />
           </Link>
 
           {/* Desktop Navigation */}
